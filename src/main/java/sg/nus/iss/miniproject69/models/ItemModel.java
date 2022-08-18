@@ -70,17 +70,17 @@ public class ItemModel { //set up model for use in services
 
   public static ItemModel create(JsonObject json) { //convert to json object 
 
-        final ItemModel Items = new ItemModel();
-        Items.setHalal(json.getBoolean("halal"));
-        Items.setItemBrand(json.getString("brand"));
-        Items.setItemCategory(json.getString("category"));
-        Items.setItemDescription(json.getString("description"));
-        Items.setItemDiscount(json.getString("discount"));
-        Items.setItemName(json.getString("name"));
-        Items.setItemPrice(json.getString("price"));
-        Items.setItemSerialNumber(json.getString("serial_no"));
+        final ItemModel items = new ItemModel();
+        items.setHalal(json.getBoolean("halal"));
+        items.setItemBrand(json.getString("brand"));
+        items.setItemCategory(json.getString("category"));
+        items.setItemDescription(json.getString("description"));
+        items.setItemDiscount(json.getString("discount"));
+        items.setItemName(json.getString("name"));
+        items.setItemPrice(json.getString("price"));
+        items.setItemSerialNumber(json.getString("serial_no"));
 
-        return Items;
+        return items;
     }
 
     public static ItemModel create(String json){ 
